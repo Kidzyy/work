@@ -14,32 +14,44 @@
 	<div id="div1"></div>
 	<div id="div2"></div>
 	<div id="welcome">
-	    <img id="logo2" src="./imgs/Kidzy!.png">
-	    <div>
-	    	<h1>Welcome to Kidzy!</h1>
-	    	<h3>Let's play together, and learn!</h3>
-	    </div>
+		<div class="row">
+			<div class="column">	
+		    	<img id="logo2" src="./imgs/Kidzy!.png">
+			</div>
+		    <div class="column2">
+		    	<h1>Welcome to Kidzy!</h1>
+		    	<h3>Let's play together, and learn!</h3>
+		    </div>
+		</div>
 	    <div id="game">
 			<div class="row">
-			  <div class="column">
+			  <div class="column" onclick="colors()">
 			    <img  class="imggame" src="./imgs/colors.jpg" alt="Colors">
-			    <div class="middle">
-			    	<div class="text">Colors</div>
-			    </div>
 			  </div>
 			  <div class="column">
 			    <img class="imggame" src="./imgs/animals.jpg" alt="Animals" >
+			     
 			  </div>
 			  <div class="column">
 			    <img class="imggame" src="./imgs/numbers.jpg" alt="Numbers" >
+			    
 			  </div>
 			  <div class="column">
 			    <img class="imggame" src="./imgs/shapes.jpg" alt="Shapes">
+			    
 			  </div>
 			</div>
 	    </div>
 	</div>
-	<div id="div3"></div>
-	<div id="div4"></div>
+	<div id="div3" class="row">
+		<div class="columntext text">Colors</div>
+		<div class="columntext text">Animals</div>
+		<div class="columntext text">Numbers</div>
+		<div class="columntext text">Shapes</div>	 
+	</div>
+	<div id="div4">
+		<div id="colors" class="row"></div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
