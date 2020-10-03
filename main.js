@@ -6,7 +6,9 @@ var colorsArr = ["red","blue","green","white", "black","purple","pink","yellow"]
 function colors() {
 
 
-    $('#div4').html('');
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh1">Pick a color and guess its name</h1>')
+	$('#div4').append($title);
     var $colorguess =  $('<div id="colorsguess" class="row"></div>');
 	var $colors =  $('<div id="colors" class="row"></div>');
 	var index = this.array.length - 1;
@@ -30,13 +32,17 @@ function playAudio(i) {
 function animals() {
 
 
-    $('#div4').html('');
-	var $animals =  $('<div id="colors" class="row "></div>');
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh2">Pick an animal and learn how to spell its name</h1>')
+	$('#div4').append($title);
+	var $animals =  $('<div id="colors" class="row animalslist"></div>');
 	var index = animalsArray.length - 1;
     while(index >= 0){
 		var audio = animalsArray[index]["voice"];
 		console.log(audio);
-		var $animal = $('<div><img id="'+index+'"onclick="playAudio(this.id)" style="background-color : white" class="column imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" >');
+		var $animal = $('<div class=" column"><img id="'+index+'"onclick="playAudio(this.id)" style="background-color : white" class=" imggame animal" src="'+animalsArray[index]["image"]+'" alt="Colors" ></div>');
+		var $text = $('<h2 class="animalname">'+animalsArray[index]["name"]+'</h2>');
+		$animal.append($text);
 		$animals.prepend($animal);
 		index--;
 	}
@@ -47,8 +53,10 @@ function numbers() {
 	var num1= Math.floor(Math.random() * 10);
 	var num2= Math.floor(Math.random() * 10);
 	result = num1 + num2;
-    $('#div4').html('');
-	var $numbers =  $('<div id="colors" class="row "></div>');
+	$('#div4').html('');
+	var $title = $('<h1 class = "titleh3">Enter your ansewr and click on the equal sign ti get you result</h1>')
+	$('#div4').append($title);
+	var $numbers =  $('<div id="colors" class="row numberplus"></div>');
 
 		var $number = $('<div><img  style="background-color : #ffffff00" class="column imggame animal" src="./imgs/'+num1+'.png" alt="Colors" ></div>');
 		$numbers.append($number);
