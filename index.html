@@ -24,34 +24,33 @@
 		    </div>
 		</div>
 	    <div id="game">
+
 			<div class="row">
-			  <div class="column" onclick="colors()">
-			    <img  class="imggame" src="./imgs/colors.jpg" alt="Colors">
-			  </div>
-			  <div class="column">
-			    <img class="imggame" src="./imgs/animals.jpg" alt="Animals" >
-			     
-			  </div>
-			  <div class="column">
-			    <img class="imggame" src="./imgs/numbers.jpg" alt="Numbers" >
-			    
-			  </div>
-			  <div class="column">
-			    <img class="imggame" src="./imgs/shapes.jpg" alt="Shapes">
-			    
-			  </div>
-			</div>
+				<div class="col-lg-4">
+					<img onclick="myGame.displayGame()"  class="column imggame" src="./imgs/colors.jpg" alt="Colors">
+					 <h2 class="text">Colors</h2>
+				</div>
+				<div class="col-lg-4">
+					<img  onclick="animals()" class="column imggame" src="./imgs/animals.jpg" alt="Colors">
+					 <h2 class="text">Animals</h2>
+				</div>
+				<div class="col-lg-4">
+					<img  onclick="numbers()" class="column imggame" src="./imgs/numbers.jpg" alt="Colors">
+					 <h2 class="text">Numbers</h2>
+				</div>
+
 	    </div>
 	</div>
-	<div id="div3" class="row">
-		<div class="columntext text">Colors</div>
-		<div class="columntext text">Animals</div>
-		<div class="columntext text">Numbers</div>
-		<div class="columntext text">Shapes</div>	 
-	</div>
+
+
 	<div id="div4">
 		<div id="colors" class="row"></div>
 	</div>
+		
+
+
+
+
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
